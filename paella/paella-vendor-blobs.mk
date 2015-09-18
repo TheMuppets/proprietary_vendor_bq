@@ -134,20 +134,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/bin/perfd:system/bin/perfd \
     vendor/bq/paella/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/bq/paella/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/bq/paella/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/bq/paella/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
-    vendor/bq/paella/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/bq/paella/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/bq/paella/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/bq/paella/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/bq/paella/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/bq/paella/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/bq/paella/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/bq/paella/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/bq/paella/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/bq/paella/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/bq/paella/proprietary/bin/qmuxd:system/bin/qmuxd \
