@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     ConfigurationClient \
+    com.qrd.wappush \
     TimeService
 
 PRODUCT_PACKAGES += \
@@ -29,8 +30,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libqct_resampler \
-    libmm-abl \
-    libmm-disp-apis
+    libmm-abl
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
