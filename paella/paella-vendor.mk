@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
+    ConfigurationClient \
     TimeService
 
 PRODUCT_PACKAGES += \
