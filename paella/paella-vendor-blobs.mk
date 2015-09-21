@@ -42,6 +42,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libactuator_bu64297gwz_olqba22.so:system/vendor/lib/libactuator_bu64297gwz_olqba22.so \
     vendor/bq/paella/proprietary/vendor/lib/libactuator_bu64297gwz_olqba22_camcorder.so:system/vendor/lib/libactuator_bu64297gwz_olqba22_camcorder.so \
     vendor/bq/paella/proprietary/vendor/lib/libactuator_bu64297gwz_olqba22_camera.so:system/vendor/lib/libactuator_bu64297gwz_olqba22_camera.so \
+    vendor/bq/paella/proprietary/vendor/lib/libactuator_dw9761b_f13n05e.so:system/vendor/lib/libactuator_dw9761b_f13n05e.so \
+    vendor/bq/paella/proprietary/vendor/lib/libactuator_dw9761b_f13n05e_camcorder.so:system/vendor/lib/libactuator_dw9761b_f13n05e_camcorder.so \
+    vendor/bq/paella/proprietary/vendor/lib/libactuator_dw9761b_f13n05e_camera.so:system/vendor/lib/libactuator_dw9761b_f13n05e_camera.so \
+    vendor/bq/paella/proprietary/vendor/lib/libactuator_dw9800w_f13n05k.so:system/vendor/lib/libactuator_dw9800w_f13n05k.so \
+    vendor/bq/paella/proprietary/vendor/lib/libactuator_dw9800w_f13n05k_camcorder.so:system/vendor/lib/libactuator_dw9800w_f13n05k_camcorder.so \
+    vendor/bq/paella/proprietary/vendor/lib/libactuator_dw9800w_f13n05k_camera.so:system/vendor/lib/libactuator_dw9800w_f13n05k_camera.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_olqba22_default_video.so:system/vendor/lib/libchromatix_imx214_olqba22_default_video.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_olqba22_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_olqba22_hfr_60fps.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_olqba22_video_hd.so:system/vendor/lib/libchromatix_imx214_olqba22_video_hd.so \
@@ -51,12 +57,30 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_olqba22_common.so:system/vendor/lib/libchromatix_imx214_olqba22_common.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_olqba22_preview.so:system/vendor/lib/libchromatix_imx214_olqba22_preview.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_olqba22_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_olqba22_hfr_90fps.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_common.so:system/vendor/lib/libchromatix_imx214_f13n05k_common.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_liveshot.so:system/vendor/lib/libchromatix_imx214_f13n05k_liveshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_imx214_f13n05k.so:system/vendor/lib/libmmcamera_imx214_f13n05k.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_snapshot.so:system/vendor/lib/libchromatix_imx214_f13n05k_snapshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_video_hd.so:system/vendor/lib/libchromatix_imx214_f13n05k_video_hd.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_preview.so:system/vendor/lib/libchromatix_imx214_f13n05k_preview.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_f13n05k_hfr_90fps.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_f13n05k_hfr_120fps.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_f13n05k_hfr_60fps.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_default_video.so:system/vendor/lib/libchromatix_imx214_f13n05k_default_video.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_s7b5_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_s7b5_eeprom.so \
+    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_s7b5.so:system/vendor/lib/libmmcamera_s5k5e2_s7b5.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_liveshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_snapshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_video_hd.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_preview.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_preview.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_common.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_common.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_video.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_video.so \
     vendor/bq/paella/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/bq/paella/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
