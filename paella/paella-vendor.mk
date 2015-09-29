@@ -25,6 +25,15 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
+    CNEService \
+    cneapiclient \
+    com.quicinc.cne
+
+PRODUCT_PACKAGES += \
+    com.qti.dpmframework \
+    dpmapi
+
+PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook
 
