@@ -60,6 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_common.so:system/vendor/lib/libchromatix_imx214_f13n05k_common.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_liveshot.so:system/vendor/lib/libchromatix_imx214_f13n05k_liveshot.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_imx214_f13n05k.so:system/vendor/lib/libmmcamera_imx214_f13n05k.so \
+    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_imx214_f13n05k_eeprom.so:system/vendor/lib/libmmcamera_imx214_f13n05k_eeprom.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_snapshot.so:system/vendor/lib/libchromatix_imx214_f13n05k_snapshot.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_video_hd.so:system/vendor/lib/libchromatix_imx214_f13n05k_video_hd.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_preview.so:system/vendor/lib/libchromatix_imx214_f13n05k_preview.so \
@@ -113,8 +114,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/bq/paella/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/bq/paella/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/bq/paella/proprietary/lib/libarcsoft_beauty_shot.so:system/lib/libarcsoft_beauty_shot.so \
-    vendor/bq/paella/proprietary/lib/libcam.meiyan.so:system/lib/libcam.meiyan.so \
+    vendor/bq/paella/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
+    vendor/bq/paella/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so \
+    vendor/bq/paella/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
     vendor/bq/paella/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/paella/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/bq/paella/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
