@@ -114,7 +114,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/bq/paella/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/bq/paella/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/bq/paella/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/paella/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so \
     vendor/bq/paella/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
     vendor/bq/paella/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
