@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
-    ConnectivityExt
+    ConnectivityExt \
+    QtiTetherService
 
 PRODUCT_PACKAGES += \
     qcnvitems \

@@ -208,6 +208,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/bq/paella/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/bq/paella/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
+    vendor/bq/paella/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/bq/paella/proprietary/bin/cnd:system/bin/cnd \
     vendor/bq/paella/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/bq/paella/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -218,6 +220,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/etc/permissions/com.qrd.wappush.xml:system/etc/permissions/com.qrd.wappush.xml \
     vendor/bq/paella/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/bq/paella/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/bq/paella/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/bq/paella/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/bq/paella/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/bq/paella/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
