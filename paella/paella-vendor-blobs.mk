@@ -137,7 +137,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/bq/paella/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/bq/paella/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/bq/paella/proprietary/app/OmaDrmEngine/OmaDrmEngine.apk:system/app/OmaDrmEngine/OmaDrmEngine.apk \
     vendor/bq/paella/proprietary/lib/libomadrmutils_jni.so:system/lib/libomadrmutils_jni.so \
     vendor/bq/paella/proprietary/vendor/lib/drm/libomadrmengine.so:system/vendor/lib/drm/libomadrmengine.so \
     vendor/bq/paella/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \

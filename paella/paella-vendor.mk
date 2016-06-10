@@ -66,4 +66,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libwpa_qmi_eap_proxy
 
+PRODUCT_PACKAGES += \
+    OmaDrmEngine
+
 $(call inherit-product, vendor/bq/paella/paella-vendor-blobs.mk)

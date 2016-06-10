@@ -71,6 +71,16 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := OmaDrmEngine
+LOCAL_SRC_FILES := proprietary/app/OmaDrmEngine/OmaDrmEngine.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := false
+LOCAL_CERTIFICATE := platform
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.qrd.wappush
 LOCAL_MODULE_OWNER := bq
 LOCAL_SRC_FILES := proprietary/framework/com.qrd.wappush.jar
