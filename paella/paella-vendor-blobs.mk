@@ -216,7 +216,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/bin/radish:system/bin/radish \
     vendor/bq/paella/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/bq/paella/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/bq/paella/proprietary/etc/permissions/com.qrd.wappush.xml:system/etc/permissions/com.qrd.wappush.xml \
     vendor/bq/paella/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/bq/paella/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/bq/paella/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
