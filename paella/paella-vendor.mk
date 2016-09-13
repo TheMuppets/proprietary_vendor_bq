@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
-    ConfigurationClient \
     com.qrd.wappush \
     TimeService
 
@@ -31,7 +30,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     com.qti.dpmframework \
-    dpmapi
+    dpmapi \
+    ConnectivityExt
 
 PRODUCT_PACKAGES += \
     qcnvitems \
@@ -54,6 +54,9 @@ PRODUCT_PACKAGES += \
     libqmi \
     libqmi_client_qmux \
     libqmiservices \
+    libqmi_cci \
+    libqmi_common_so \
+    libdsi_netctrl \
     libqmi
 
 PRODUCT_PACKAGES += \
