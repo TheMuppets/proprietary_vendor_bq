@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -68,12 +68,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_f13n05k_hfr_120fps.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_f13n05k_hfr_60fps.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_imx214_f13n05k_default_video.so:system/vendor/lib/libchromatix_imx214_f13n05k_default_video.so \
-    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so \
-    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so \
-    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so \
-    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so \
-    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so \
-    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_s7b5_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_s7b5_eeprom.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_s7b5.so:system/vendor/lib/libmmcamera_s5k5e2_s7b5.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_liveshot.so \
@@ -82,6 +76,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_preview.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_preview.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_common.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_common.so \
     vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_s7b5_video.so:system/vendor/lib/libchromatix_s5k5e2_s7b5_video.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_liveshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_video.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_video.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_common.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_common.so \
+    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f24_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f24_eeprom.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_preview.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_preview.so \
+    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f24.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f24.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_snapshot.so \
+    vendor/bq/paella/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_video_hd.so \
     vendor/bq/paella/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/bq/paella/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -102,9 +104,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f20.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f20.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_imx214_olqba22.so:system/vendor/lib/libmmcamera_imx214_olqba22.so \
-    vendor/bq/paella/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f20_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f20_eeprom.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_imx214_olqba22_eeprom.so:system/vendor/lib/libmmcamera_imx214_olqba22_eeprom.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
@@ -115,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/bq/paella/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/bq/paella/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/bq/paella/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so \
     vendor/bq/paella/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
     vendor/bq/paella/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/paella/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
@@ -138,7 +137,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/bq/paella/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/bq/paella/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/bq/paella/proprietary/bin/location-mq:system/bin/location-mq \
+    vendor/bq/paella/proprietary/lib/libomadrmutils_jni.so:system/lib/libomadrmutils_jni.so \
+    vendor/bq/paella/proprietary/vendor/lib/drm/libomadrmengine.so:system/vendor/lib/drm/libomadrmengine.so \
     vendor/bq/paella/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/bq/paella/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/bq/paella/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -150,22 +150,28 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/bq/paella/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/bq/paella/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/bq/paella/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
     vendor/bq/paella/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/bq/paella/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/bq/paella/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/bq/paella/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/bq/paella/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/bq/paella/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/bq/paella/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/bq/paella/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/bq/paella/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/bq/paella/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/bq/paella/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/bq/paella/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
+    vendor/bq/paella/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/bq/paella/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
+    vendor/bq/paella/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
+    vendor/bq/paella/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/bq/paella/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/bq/paella/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/bq/paella/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/bq/paella/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/bq/paella/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
+    vendor/bq/paella/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
+    vendor/bq/paella/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
     vendor/bq/paella/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/bq/paella/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/bq/paella/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
@@ -183,31 +189,26 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/bq/paella/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/bq/paella/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/bq/paella/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
-    vendor/bq/paella/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     vendor/bq/paella/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/bq/paella/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-    vendor/bq/paella/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     vendor/bq/paella/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/bq/paella/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/bq/paella/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/bq/paella/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/bq/paella/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    vendor/bq/paella/proprietary/bin/perfd:system/bin/perfd \
+    vendor/bq/paella/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/paella/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/bq/paella/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/bq/paella/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/bq/paella/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/bq/paella/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/bq/paella/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/bq/paella/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/bq/paella/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/bq/paella/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/bq/paella/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/bq/paella/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/bq/paella/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/bq/paella/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/bq/paella/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
+    vendor/bq/paella/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/bq/paella/proprietary/bin/cnd:system/bin/cnd \
     vendor/bq/paella/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/bq/paella/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -215,9 +216,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/bin/radish:system/bin/radish \
     vendor/bq/paella/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/bq/paella/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/bq/paella/proprietary/etc/permissions/com.qrd.wappush.xml:system/etc/permissions/com.qrd.wappush.xml \
     vendor/bq/paella/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/bq/paella/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/bq/paella/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/bq/paella/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/bq/paella/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/bq/paella/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
@@ -238,7 +239,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/bq/paella/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/bq/paella/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/bq/paella/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    vendor/bq/paella/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
+    vendor/bq/paella/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
+    vendor/bq/paella/proprietary/etc/qmi_fw.conf:system/etc/qmi_fw.conf \
+    vendor/bq/paella/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/bq/paella/proprietary/bin/nl_listener:system/bin/nl_listener \
+    vendor/bq/paella/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/bq/paella/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/bq/paella/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/bq/paella/proprietary/bin/time_daemon:system/bin/time_daemon \
