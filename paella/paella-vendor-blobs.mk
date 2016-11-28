@@ -244,6 +244,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/paella/proprietary/etc/qmi_fw.conf:system/etc/qmi_fw.conf \
     vendor/bq/paella/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/bq/paella/proprietary/bin/nl_listener:system/bin/nl_listener \
+    vendor/bq/paella/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/bq/paella/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/paella/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/bq/paella/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/bq/paella/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
