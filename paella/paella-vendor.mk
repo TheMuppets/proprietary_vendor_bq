@@ -16,15 +16,11 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
-    com.qualcomm.location
-
-PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     ConfigurationClient \
     TimeService
 
 PRODUCT_PACKAGES += \
-    CNEService \
     cneapiclient \
     com.quicinc.cne
 
@@ -32,7 +28,6 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     ConnectivityExt \
-    QtiTetherService
 
 PRODUCT_PACKAGES += \
     qcnvitems \
