@@ -81,6 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/bq/tenshi/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/bq/tenshi/proprietary/etc/firmware/DE.o.msm8937:system/etc/firmware/DE.o.msm8937 \
+    vendor/bq/tenshi/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     vendor/bq/tenshi/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/bq/tenshi/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/bq/tenshi/proprietary/etc/izat.conf:system/etc/izat.conf \
@@ -177,6 +178,51 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_common.so:system/vendor/lib/libchromatix_ov5675_d5v15b_common.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_hfr_120.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_hfr_60.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_hfr_90.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_liveshot.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_liveshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_preview.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_preview.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_snapshot.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_snapshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_cpp_video.so:system/vendor/lib/libchromatix_ov5675_d5v15b_cpp_video.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_default_preview_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_default_preview_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_default_video_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_default_video_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_default_video.so:system/vendor/lib/libchromatix_ov5675_d5v15b_default_video.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_hfr_120_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_hfr_120_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_hfr_120.so:system/vendor/lib/libchromatix_ov5675_d5v15b_hfr_120.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_hfr_60_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_hfr_60_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_hfr_60.so:system/vendor/lib/libchromatix_ov5675_d5v15b_hfr_60.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_hfr_90_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_hfr_90_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_hfr_90.so:system/vendor/lib/libchromatix_ov5675_d5v15b_hfr_90.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_liveshot.so:system/vendor/lib/libchromatix_ov5675_d5v15b_liveshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_postproc.so:system/vendor/lib/libchromatix_ov5675_d5v15b_postproc.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_preview.so:system/vendor/lib/libchromatix_ov5675_d5v15b_preview.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_snapshot.so:system/vendor/lib/libchromatix_ov5675_d5v15b_snapshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_zsl_preview_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_zsl_preview_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_ov5675_d5v15b_zsl_video_3a.so:system/vendor/lib/libchromatix_ov5675_d5v15b_zsl_video_3a.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_common.so:system/vendor/lib/libchromatix_s5k3p3_common.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k3p3_cpp_hfr_120.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k3p3_cpp_hfr_60.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k3p3_cpp_hfr_90.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3p3_cpp_liveshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_preview.so:system/vendor/lib/libchromatix_s5k3p3_cpp_preview.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3p3_cpp_snapshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_cpp_video.so:system/vendor/lib/libchromatix_s5k3p3_cpp_video.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_default_preview_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_default_preview_dw9800.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_default_video_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_default_video_dw9800.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_default_video.so:system/vendor/lib/libchromatix_s5k3p3_default_video.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_hfr_120_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_hfr_120_dw9800.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_hfr_120.so:system/vendor/lib/libchromatix_s5k3p3_hfr_120.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_hfr_60_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_hfr_60_dw9800.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_hfr_60.so:system/vendor/lib/libchromatix_s5k3p3_hfr_60.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_hfr_90_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_hfr_90_dw9800.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_hfr_90.so:system/vendor/lib/libchromatix_s5k3p3_hfr_90.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_postproc.so:system/vendor/lib/libchromatix_s5k3p3_postproc.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_preview.so:system/vendor/lib/libchromatix_s5k3p3_preview.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_snapshot.so:system/vendor/lib/libchromatix_s5k3p3_snapshot.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_zsl_preview_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_zsl_preview_dw9800.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libchromatix_s5k3p3_zsl_video_dw9800.so:system/vendor/lib/libchromatix_s5k3p3_zsl_video_dw9800.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
@@ -214,6 +260,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libloc_core.so:system/vendor/lib/libloc_core.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
@@ -222,6 +269,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmdtp_crypto.so:system/vendor/lib/libmdtp_crypto.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmdtp.so:system/vendor/lib/libmdtp.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_ov5675.so:system/vendor/lib/libmmcamera_ov5675.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_s5k3p3.so:system/vendor/lib/libmmcamera_s5k3p3.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmm-dspp-utils.so:system/vendor/lib/libmm-dspp-utils.so \
