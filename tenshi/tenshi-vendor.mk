@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/bq/tenshi/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/bq/tenshi/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/bq/tenshi/proprietary/bin/fstman:system/bin/fstman \
     vendor/bq/tenshi/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/bq/tenshi/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/bq/tenshi/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
@@ -78,8 +79,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/bq/tenshi/proprietary/etc/firmware/DE.o.msm8937:system/etc/firmware/DE.o.msm8937 \
     vendor/bq/tenshi/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
+    vendor/bq/tenshi/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/bq/tenshi/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/bq/tenshi/proprietary/etc/gps.conf:system/etc/gps.conf \
+    vendor/bq/tenshi/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    vendor/bq/tenshi/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    vendor/bq/tenshi/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
     vendor/bq/tenshi/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/bq/tenshi/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/bq/tenshi/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
@@ -98,6 +103,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/bq/tenshi/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/bq/tenshi/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
+    vendor/bq/tenshi/proprietary/etc/wifi/fstman.ini:system/etc/wifi/fstman.ini \
+    vendor/bq/tenshi/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/bq/tenshi/proprietary/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+    vendor/bq/tenshi/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/bq/tenshi/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/bq/tenshi/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/bq/tenshi/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
