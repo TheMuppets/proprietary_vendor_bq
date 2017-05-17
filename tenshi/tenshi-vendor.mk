@@ -97,11 +97,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/bq/tenshi/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/bq/tenshi/proprietary/etc/sec_config:system/etc/sec_config \
     vendor/bq/tenshi/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/bq/tenshi/proprietary/etc/wifi/fstman.ini:system/etc/wifi/fstman.ini \
     vendor/bq/tenshi/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
@@ -115,14 +115,21 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/bq/tenshi/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/tenshi/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/bq/tenshi/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/bq/tenshi/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/bq/tenshi/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/tenshi/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/tenshi/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/bq/tenshi/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/bq/tenshi/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
+    vendor/bq/tenshi/proprietary/lib/libgnsspps.so:system/lib/libgnsspps.so \
+    vendor/bq/tenshi/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/bq/tenshi/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/bq/tenshi/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/bq/tenshi/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/bq/tenshi/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/bq/tenshi/proprietary/lib/libloc_pla.so:system/lib/libloc_pla.so \
+    vendor/bq/tenshi/proprietary/lib/libloc_stub.so:system/lib/libloc_stub.so \
     vendor/bq/tenshi/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -141,7 +148,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/bq/tenshi/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/bq/tenshi/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/bq/tenshi/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
     vendor/bq/tenshi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/bq/tenshi/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/bq/tenshi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -162,6 +168,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/hw/keystore.msm8937.so:system/vendor/lib/hw/keystore.msm8937.so \
     vendor/bq/tenshi/proprietary/vendor/lib/hw/sound_trigger.primary.msm8937.so:system/vendor/lib/hw/sound_trigger.primary.msm8937.so \
     vendor/bq/tenshi/proprietary/vendor/lib/hw/vulkan.msm8937.so:system/vendor/lib/hw/vulkan.msm8937.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/lib_rsu.so:system/vendor/lib/lib_rsu.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -261,24 +271,30 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libdrplugin_client.so:system/vendor/lib/libdrplugin_client.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libevent_observer.so:system/vendor/lib/libevent_observer.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libgdtap.so:system/vendor/lib/libgdtap.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libDRPlugin.so:system/vendor/lib/libDRPlugin.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libGPTEE.so:system/vendor/lib/libGPTEE.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
@@ -289,6 +305,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
     vendor/bq/tenshi/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmdtp_crypto.so:system/vendor/lib/libmdtp_crypto.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmdtp.so:system/vendor/lib/libmdtp.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -311,6 +328,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_dbg.so:system/vendor/lib/libmmcamera_dbg.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:system/vendor/lib/libmmcamera_dcrf_lib.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_dummyalgo.so:system/vendor/lib/libmmcamera_dummyalgo.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_eebinparse.so:system/vendor/lib/libmmcamera_eebinparse.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:system/vendor/lib/libmmcamera_facedetection_lib.so \
@@ -360,13 +379,17 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
-    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_qtech_gt24c64a_eeprom.so:system/vendor/lib/libmmcamera_qtech_gt24c64a_eeprom.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_imx258_mono_gt24c32_eeprom.so:system/vendor/lib/libmmcamera_imx258_mono_gt24c32_eeprom.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_s5k3p3.so:system/vendor/lib/libmmcamera_s5k3p3.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
@@ -381,7 +404,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmsw_math.so:system/vendor/lib/libmmsw_math.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmsw_opencl.so:system/vendor/lib/libmmsw_opencl.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libmmsw_platform.so:system/vendor/lib/libmmsw_platform.so \
-    vendor/bq/tenshi/proprietary/vendor/lib/libMpeg4SwEncoder.so:system/vendor/lib/libMpeg4SwEncoder.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
@@ -419,9 +441,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:system/vendor/lib/libril-qc-ltedirectdisc.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/librilqmiservices.so:system/vendor/lib/librilqmiservices.so \
     vendor/bq/tenshi/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/bq/tenshi/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/bq/tenshi/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
@@ -429,6 +454,28 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libscalar.so:system/vendor/lib/libscalar.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveBlobDescriptor.so:system/vendor/lib/libscveBlobDescriptor.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:system/vendor/lib/libscveBlobDescriptor_stub.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveCleverCapture.so:system/vendor/lib/libscveCleverCapture.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveCleverCapture_stub.so:system/vendor/lib/libscveCleverCapture_stub.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveCommon.so:system/vendor/lib/libscveCommon.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveCommon_stub.so:system/vendor/lib/libscveCommon_stub.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveFaceRecognition.so:system/vendor/lib/libscveFaceRecognition.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveImageCloning.so:system/vendor/lib/libscveImageCloning.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveImageCorrection.so:system/vendor/lib/libscveImageCorrection.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveImageRemoval.so:system/vendor/lib/libscveImageRemoval.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveMotionVector.so:system/vendor/lib/libscveMotionVector.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveObjectMatting.so:system/vendor/lib/libscveObjectMatting.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveObjectMatting_stub.so:system/vendor/lib/libscveObjectMatting_stub.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveObjectSegmentation.so:system/vendor/lib/libscveObjectSegmentation.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:system/vendor/lib/libscveObjectSegmentation_stub.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveObjectTracker.so:system/vendor/lib/libscveObjectTracker.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveObjectTracker_stub.so:system/vendor/lib/libscveObjectTracker_stub.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscvePanorama.so:system/vendor/lib/libscvePanorama.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveTextReco.so:system/vendor/lib/libscveTextReco.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveTextRecoPostProcessing.so:system/vendor/lib/libscveTextRecoPostProcessing.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libscveTextReco_stub.so:system/vendor/lib/libscveTextReco_stub.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
@@ -441,6 +488,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/bq/tenshi/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
@@ -470,6 +518,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
     vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
     vendor/bq/tenshi/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
@@ -485,6 +534,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
+    libMpeg4SwEncoder \
     libtime_genoff \
     datastatusnotification \
     fastdormancy \
