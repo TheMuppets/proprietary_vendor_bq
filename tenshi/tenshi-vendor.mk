@@ -20,11 +20,11 @@ PRODUCT_COPY_FILES += \
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
+    vendor/bq/tenshi/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/bq/tenshi/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/bq/tenshi/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/bq/tenshi/proprietary/bin/cnd:system/bin/cnd \
     vendor/bq/tenshi/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
-    vendor/bq/tenshi/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/bq/tenshi/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/bq/tenshi/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/bq/tenshi/proprietary/bin/fstman:system/bin/fstman \
@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/bq/tenshi/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/bq/tenshi/proprietary/bin/pm-service:system/bin/pm-service \
+    vendor/bq/tenshi/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/bq/tenshi/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/bq/tenshi/proprietary/bin/radish:system/bin/radish \
     vendor/bq/tenshi/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -109,16 +110,13 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/bq/tenshi/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/bq/tenshi/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/bq/tenshi/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/bq/tenshi/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/bq/tenshi/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/bq/tenshi/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/bq/tenshi/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/tenshi/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/bq/tenshi/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/bq/tenshi/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/bq/tenshi/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/bq/tenshi/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/tenshi/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/bq/tenshi/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/bq/tenshi/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
@@ -547,7 +545,10 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     QtiTetherService \
     colorservice \
+    com.qti.dpmframework \
     com.qti.location.sdk \
+    dpmapi \
+    tcmclient \
     qcrilhook
 
 endif
