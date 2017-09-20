@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/bq/gohan/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/bq/gohan/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
+    vendor/bq/gohan/proprietary/lib/libcam.vidhance.so:system/lib/libcam.vidhance.so \
     vendor/bq/gohan/proprietary/lib/libfp_client.so:system/lib/libfp_client.so \
     vendor/bq/gohan/proprietary/lib/libfpnav.so:system/lib/libfpnav.so \
     vendor/bq/gohan/proprietary/lib/libfpservice.so:system/lib/libfpservice.so \
@@ -125,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/gohan/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/bq/gohan/proprietary/lib/libvidhance.so:system/lib/libvidhance.so \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
