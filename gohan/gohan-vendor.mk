@@ -91,6 +91,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/bq/gohan/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/bq/gohan/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.bqservices.system.xml:system/etc/permissions/bq.software.bqservices.system.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.camera.full_support.xml:system/etc/permissions/bq.software.qcom.camera.full_support.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.m.gohan.xml:system/etc/permissions/bq.software.qcom.m.gohan.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.m.xml:system/etc/permissions/bq.software.qcom.m.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.n.gohan.xml:system/etc/permissions/bq.software.qcom.n.gohan.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/bq.software.qcom.n.xml:system/etc/permissions/bq.software.qcom.n.xml \
     vendor/bq/gohan/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
