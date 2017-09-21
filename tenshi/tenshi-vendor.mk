@@ -78,12 +78,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/bq/tenshi/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     vendor/bq/tenshi/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/bq/tenshi/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    vendor/bq/tenshi/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    vendor/bq/tenshi/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     vendor/bq/tenshi/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/bq/tenshi/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/bq/tenshi/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/bq.software.bqservices.system.xml:system/etc/permissions/bq.software.bqservices.system.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.m.tenshi.xml:system/etc/permissions/bq.software.qcom.m.tenshi.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.m.xml:system/etc/permissions/bq.software.qcom.m.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.n.tenshi.xml:system/etc/permissions/bq.software.qcom.n.tenshi.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.n.xml:system/etc/permissions/bq.software.qcom.n.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -99,8 +101,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/bq/tenshi/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/bq/tenshi/proprietary/etc/wifi/fstman.ini:system/etc/wifi/fstman.ini \
-    vendor/bq/tenshi/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/bq/tenshi/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/bq/tenshi/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/bq/tenshi/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/bq/tenshi/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
