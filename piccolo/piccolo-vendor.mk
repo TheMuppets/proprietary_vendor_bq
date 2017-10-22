@@ -67,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/piccolo/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/bq/piccolo/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0050_Generic_I2C_NCD_Unsigned_configdata.ncd:system/vendor/firmware/BCM20795A2_001.003.025.0005.0050_Generic_I2C_NCD_Unsigned_configdata.ncd \
-    vendor/bq/piccolo/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/bq/piccolo/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/bq/piccolo/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/bq/piccolo/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -227,7 +226,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/bq/piccolo/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/bq/piccolo/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
