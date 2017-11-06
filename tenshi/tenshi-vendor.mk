@@ -19,10 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/bq/tenshi/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/bq/tenshi/proprietary/bin/cnd:system/bin/cnd \
-    vendor/bq/tenshi/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/bq/tenshi/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/bq/tenshi/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
-    vendor/bq/tenshi/proprietary/bin/fstman:system/bin/fstman \
     vendor/bq/tenshi/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/bq/tenshi/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/bq/tenshi/proprietary/bin/iop:system/bin/iop \
@@ -77,9 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/bq/tenshi/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/bq/tenshi/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
-    vendor/bq/tenshi/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/bq/tenshi/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/bq/tenshi/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/bq/tenshi/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/bq.software.bqservices.system.xml:system/etc/permissions/bq.software.bqservices.system.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.m.tenshi.xml:system/etc/permissions/bq.software.qcom.m.tenshi.xml \
@@ -98,18 +93,19 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/bq/tenshi/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/bq/tenshi/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
-    vendor/bq/tenshi/proprietary/etc/wifi/fstman.ini:system/etc/wifi/fstman.ini \
-    vendor/bq/tenshi/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/bq/tenshi/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/bq/tenshi/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/tenshi/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+    vendor/bq/tenshi/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+    vendor/bq/tenshi/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/bq/tenshi/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/bq/tenshi/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/bq/tenshi/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/tenshi/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/bq/tenshi/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/bq/tenshi/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/bq/tenshi/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/tenshi/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/bq/tenshi/proprietary/lib/hw/fingerprint.msm8937.so:system/lib/hw/fingerprint.msm8937.so \
     vendor/bq/tenshi/proprietary/lib/libOmxSwVdec.so:system/lib/libOmxSwVdec.so \
@@ -119,13 +115,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/bq/tenshi/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
     vendor/bq/tenshi/proprietary/lib/libgnsspps.so:system/lib/libgnsspps.so \
-    vendor/bq/tenshi/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/bq/tenshi/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/bq/tenshi/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/bq/tenshi/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/bq/tenshi/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/bq/tenshi/proprietary/lib/libloc_pla.so:system/lib/libloc_pla.so \
-    vendor/bq/tenshi/proprietary/lib/libloc_stub.so:system/lib/libloc_stub.so \
     vendor/bq/tenshi/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/bq/tenshi/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
@@ -540,8 +531,4 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     colorservice \
-    com.qti.dpmframework \
-    com.qti.location.sdk \
-    dpmapi \
-    qcrilhook \
-    tcmclient
+    qcrilhook
