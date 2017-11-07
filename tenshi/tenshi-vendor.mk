@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/bq/tenshi/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/bq/tenshi/proprietary/bin/pm-service:system/bin/pm-service \
-    vendor/bq/tenshi/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/bq/tenshi/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/bq/tenshi/proprietary/bin/radish:system/bin/radish \
     vendor/bq/tenshi/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -77,6 +76,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     vendor/bq/tenshi/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/bq.software.bqservices.system.xml:system/etc/permissions/bq.software.bqservices.system.xml \
+    vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.camera.full_support.xml:system/etc/permissions/bq.software.qcom.camera.full_support.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.m.tenshi.xml:system/etc/permissions/bq.software.qcom.m.tenshi.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.m.xml:system/etc/permissions/bq.software.qcom.m.xml \
     vendor/bq/tenshi/proprietary/etc/permissions/bq.software.qcom.n.tenshi.xml:system/etc/permissions/bq.software.qcom.n.tenshi.xml \
