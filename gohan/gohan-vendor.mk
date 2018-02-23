@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
     vendor/bq/gohan/proprietary/etc/camera/imx219_d8n03d_chromatix.xml:system/etc/camera/imx219_d8n03d_chromatix.xml \
     vendor/bq/gohan/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
+    vendor/bq/gohan/proprietary/etc/camera/imx298_cmb087qr_chromatix.xml:system/etc/camera/imx298_cmb087qr_chromatix.xml \
     vendor/bq/gohan/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/bq/gohan/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/bq/gohan/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
@@ -175,6 +176,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64297.so:system/vendor/lib/libactuator_bu64297.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9800w_cmb087qr.so:system/vendor/lib/libactuator_dw9800w_cmb087qr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
@@ -216,6 +218,37 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx219_d8n03d_zsl_video.so:system/vendor/lib/libchromatix_imx219_d8n03d_zsl_video.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:system/vendor/lib/libchromatix_imx298_4K_preview.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:system/vendor/lib/libchromatix_imx298_4K_video.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_4K_preview.so:system/vendor/lib/libchromatix_imx298_cmb087qr_4K_preview.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_4K_video.so:system/vendor/lib/libchromatix_imx298_cmb087qr_4K_video.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_common.so:system/vendor/lib/libchromatix_imx298_cmb087qr_common.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_120.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_60.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_hfr_90.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_liveshot.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_liveshot.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_preview.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_preview.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_snapshot.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_snapshot.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_snapshot_hdr.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_video.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_video.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx298_cmb087qr_cpp_video_hdr.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_default_preview.so:system/vendor/lib/libchromatix_imx298_cmb087qr_default_preview.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_default_video.so:system/vendor/lib/libchromatix_imx298_cmb087qr_default_video.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hdr_snapshot.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hdr_snapshot.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hdr_video.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hdr_video.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hfr_120.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hfr_120.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hfr_120_3a.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hfr_120_3a.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hfr_60.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hfr_60.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hfr_60_3a.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hfr_60_3a.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hfr_90.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hfr_90.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_hfr_90_3a.so:system/vendor/lib/libchromatix_imx298_cmb087qr_hfr_90_3a.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_liveshot.so:system/vendor/lib/libchromatix_imx298_cmb087qr_liveshot.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_postproc.so:system/vendor/lib/libchromatix_imx298_cmb087qr_postproc.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_preview.so:system/vendor/lib/libchromatix_imx298_cmb087qr_preview.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_snapshot.so:system/vendor/lib/libchromatix_imx298_cmb087qr_snapshot.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_snapshot_hdr.so:system/vendor/lib/libchromatix_imx298_cmb087qr_snapshot_hdr.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_video.so:system/vendor/lib/libchromatix_imx298_cmb087qr_video.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_video_hdr.so:system/vendor/lib/libchromatix_imx298_cmb087qr_video_hdr.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_zsl_preview.so:system/vendor/lib/libchromatix_imx298_cmb087qr_zsl_preview.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cmb087qr_zsl_video.so:system/vendor/lib/libchromatix_imx298_cmb087qr_zsl_video.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_common.so:system/vendor/lib/libchromatix_imx298_common.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx298_cpp_hfr_120.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx298_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx298_cpp_hfr_60.so \
@@ -322,6 +355,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx219_d8n03d.so:system/vendor/lib/libmmcamera_imx219_d8n03d.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx298.so:system/vendor/lib/libmmcamera_imx298.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx298_cmb087qr.so:system/vendor/lib/libmmcamera_imx298_cmb087qr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_abcc44.so:system/vendor/lib/libmmcamera_isp_abcc44.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_abf40.so:system/vendor/lib/libmmcamera_isp_abf40.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:system/vendor/lib/libmmcamera_isp_bcc40.so \
@@ -370,6 +404,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so:system/vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
