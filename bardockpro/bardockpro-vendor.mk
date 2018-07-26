@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/bardockpro/proprietary/vendor/framework/embmslibrary.jar:system/vendor/framework/embmslibrary.jar \
     vendor/bq/bardockpro/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/bq/bardockpro/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/bq/bardockpro/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
@@ -275,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/izat.conf:system/vendor/etc/izat.conf \
     vendor/bq/bardockpro/proprietary/vendor/etc/lowi.conf:system/vendor/etc/lowi.conf \
+    vendor/bq/bardockpro/proprietary/vendor/etc/perf/perfboostsconfig.xml:system/vendor/etc/perf/perfboostsconfig.xml \
     vendor/bq/bardockpro/proprietary/vendor/etc/sap.conf:system/vendor/etc/sap.conf \
     vendor/bq/bardockpro/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
     vendor/bq/bardockpro/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
@@ -654,6 +654,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/liboemaids_vendor.so:system/vendor/lib/liboemaids_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libpdmapper.so:system/vendor/lib/libpdmapper.so \
@@ -869,6 +870,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/liboemaids_vendor.so:system/vendor/lib64/liboemaids_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/liboptizoom.so:system/vendor/lib64/liboptizoom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libpdmapper.so:system/vendor/lib64/libpdmapper.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libpdnotifier.so:system/vendor/lib64/libpdnotifier.so \
@@ -897,7 +899,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/librmp.so:system/vendor/lib/librmp.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/librmp.so:system/vendor/lib64/librmp.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
