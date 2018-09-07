@@ -122,6 +122,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/tenshi/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/tenshi/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/tenshi/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/bq/tenshi/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/bq/tenshi/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/bq/tenshi/proprietary/vendor/bin/mdtpd:system/vendor/bin/mdtpd \
     vendor/bq/tenshi/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
