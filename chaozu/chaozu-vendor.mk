@@ -120,6 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/chaozu/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/chaozu/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/chaozu/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/bq/chaozu/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/bq/chaozu/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/bq/chaozu/proprietary/vendor/bin/mdtpd:system/vendor/bin/mdtpd \
     vendor/bq/chaozu/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
