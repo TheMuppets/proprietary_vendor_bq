@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/bardockpro/proprietary/vendor/framework/embmslibrary.jar:system/vendor/framework/embmslibrary.jar \
     vendor/bq/bardockpro/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/bq/bardockpro/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/bq/bardockpro/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
