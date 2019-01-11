@@ -593,6 +593,7 @@
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
 
       <data name="rmnet_data_enabled" type="int"> 1 </data>
+      <data name="tc_ul_baserate" type="int"> 85000000 </data>
       <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
       <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 0 </data>
