@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/bin/climax_hostSW:system/bin/climax_hostSW \
     vendor/bq/bardock/proprietary/bin/dun-server:system/bin/dun-server \
-    vendor/bq/bardock/proprietary/bin/ppd:system/bin/ppd \
-    vendor/bq/bardock/proprietary/bin/sigma_dut:system/bin/sigma_dut \
     vendor/bq/bardock/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/bq/bardock/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/bq/bardock/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
@@ -86,9 +84,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/bq/bardock/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
     vendor/bq/bardock/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
-    vendor/bq/bardock/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/bq/bardock/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
-    vendor/bq/bardock/proprietary/lib/libcam.vidhance.so:system/lib/libcam.vidhance.so \
     vendor/bq/bardock/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/bq/bardock/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/bq/bardock/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
@@ -110,7 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
     vendor/bq/bardock/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
     vendor/bq/bardock/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
-    vendor/bq/bardock/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/bq/bardock/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/bq/bardock/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/bq/bardock/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
@@ -122,7 +116,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
     vendor/bq/bardock/proprietary/lib/libts_face_beautify_hal.so:system/lib/libts_face_beautify_hal.so \
     vendor/bq/bardock/proprietary/lib/libts_face_beautify_jni.so:system/lib/libts_face_beautify_jni.so \
-    vendor/bq/bardock/proprietary/lib/libvidhance.so:system/lib/libvidhance.so \
     vendor/bq/bardock/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/bq/bardock/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/bq/bardock/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
@@ -212,7 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/bq/bardock/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
     vendor/bq/bardock/proprietary/vendor/bin/lowi-server:system/vendor/bin/lowi-server \
-    vendor/bq/bardock/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/bq/bardock/proprietary/vendor/bin/mm-qcamera-app:system/vendor/bin/mm-qcamera-app \
     vendor/bq/bardock/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
     vendor/bq/bardock/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
@@ -373,12 +365,15 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/bq/bardock/proprietary/lib/libaptXScheduler.so:system/lib/libaptXScheduler.so \
     vendor/bq/bardock/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
+    vendor/bq/bardock/proprietary/vendor/lib/libarcsoft_beautyshot.so:system/vendor/lib/libarcsoft_beautyshot.so \
     vendor/bq/bardock/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/bq/bardock/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/bq/bardock/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/bq/bardock/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/bq/bardock/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/bq/bardock/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+    vendor/bq/bardock/proprietary/vendor/lib/libcam.beautyshot.so:system/vendor/lib/libcam.beautyshot.so \
+    vendor/bq/bardock/proprietary/vendor/lib/libcam.vidhance.so:system/vendor/lib/libcam.vidhance.so \
     vendor/bq/bardock/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/bq/bardock/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:system/vendor/lib/libchromatix_imx298_4K_preview.so \
     vendor/bq/bardock/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:system/vendor/lib/libchromatix_imx298_4K_video.so \
@@ -640,13 +635,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
-    vendor/bq/bardock/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
-    vendor/bq/bardock/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/bq/bardock/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
+    vendor/bq/bardock/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
     vendor/bq/bardock/proprietary/vendor/lib/liboemaids_vendor.so:system/vendor/lib/liboemaids_vendor.so \
     vendor/bq/bardock/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     vendor/bq/bardock/proprietary/vendor/lib/libpdmapper.so:system/vendor/lib/libpdmapper.so \
@@ -708,6 +702,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/bq/bardock/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/bq/bardock/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
+    vendor/bq/bardock/proprietary/vendor/lib/libvidhance.so:system/vendor/lib/libvidhance.so \
     vendor/bq/bardock/proprietary/vendor/lib/libvpplibrary.so:system/vendor/lib/libvpplibrary.so \
     vendor/bq/bardock/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/bq/bardock/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
