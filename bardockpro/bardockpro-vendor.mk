@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/bin/climax_hostSW:$(TARGET_COPY_OUT_VENDOR)/bin/climax_hostSW \
     vendor/bq/bardockpro/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/bq/bardockpro/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/bq/bardockpro/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/bq/bardockpro/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/bq/bardockpro/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -62,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/etc/firmware/sw_fp.b06:system/etc/firmware/sw_fp.b06 \
     vendor/bq/bardockpro/proprietary/etc/firmware/sw_fp.mdt:system/etc/firmware/sw_fp.mdt \
     vendor/bq/bardockpro/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/bq/bardockpro/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/bq/bardockpro/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -74,6 +76,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/bq/bardockpro/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/bq/bardockpro/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/bq/bardockpro/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/bq/bardockpro/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/bq/bardockpro/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
@@ -82,6 +86,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/bq/bardockpro/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/bq/bardockpro/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/bq/bardockpro/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+    vendor/bq/bardockpro/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/bq/bardockpro/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/bq/bardockpro/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
     vendor/bq/bardockpro/proprietary/lib/libhazebuster.so:system/lib/libhazebuster.so \
     vendor/bq/bardockpro/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
@@ -94,6 +102,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
     vendor/bq/bardockpro/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
     vendor/bq/bardockpro/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
+    vendor/bq/bardockpro/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/bq/bardockpro/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/bq/bardockpro/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/bq/bardockpro/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/bq/bardockpro/proprietary/lib/libseemore.so:system/lib/libseemore.so \
     vendor/bq/bardockpro/proprietary/lib/libseestraight.so:system/lib/libseestraight.so \
     vendor/bq/bardockpro/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
@@ -101,10 +113,26 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
     vendor/bq/bardockpro/proprietary/lib/libts_face_beautify_hal.so:system/lib/libts_face_beautify_hal.so \
     vendor/bq/bardockpro/proprietary/lib/libts_face_beautify_jni.so:system/lib/libts_face_beautify_jni.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/bq/bardockpro/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/bq/bardockpro/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/bq/bardockpro/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/bq/bardockpro/proprietary/lib64/hw/csfingerprint.default.so:system/lib64/hw/csfingerprint.default.so \
     vendor/bq/bardockpro/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
     vendor/bq/bardockpro/proprietary/lib64/hw/swfingerprint.default.so:system/lib64/hw/swfingerprint.default.so \
@@ -113,6 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/bq/bardockpro/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/bq/bardockpro/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/bq/bardockpro/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/bq/bardockpro/proprietary/lib64/libclearsight.so:system/lib64/libclearsight.so \
     vendor/bq/bardockpro/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/bq/bardockpro/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
@@ -137,6 +166,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
+    vendor/bq/bardockpro/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+    vendor/bq/bardockpro/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/bq/bardockpro/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/bq/bardockpro/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
     vendor/bq/bardockpro/proprietary/lib64/libseestraight.so:system/lib64/libseestraight.so \
@@ -145,6 +176,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/libts_detected_face_jni.so:system/lib64/libts_detected_face_jni.so \
     vendor/bq/bardockpro/proprietary/lib64/libts_face_beautify_hal.so:system/lib64/libts_face_beautify_hal.so \
     vendor/bq/bardockpro/proprietary/lib64/libts_face_beautify_jni.so:system/lib64/libts_face_beautify_jni.so \
+    vendor/bq/bardockpro/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/bq/bardockpro/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
@@ -189,6 +222,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/bq/bardockpro/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
     vendor/bq/bardockpro/proprietary/vendor/bin/wcnss_service:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_service \
+    vendor/bq/bardockpro/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/bq/bardockpro/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/bq/bardockpro/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/bq/bardockpro/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
@@ -235,6 +269,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc \
+    vendor/bq/bardockpro/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.qti.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@2.0-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -270,6 +305,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/bq/bardockpro/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/bq/bardockpro/proprietary/vendor/lib/libpn548ad_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn548ad_fw.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
@@ -569,6 +605,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ubifocus_lib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
@@ -623,6 +660,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvidhance.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so \
@@ -749,6 +791,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_dbg.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
@@ -813,6 +856,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_face_beautify_hal.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libulp2.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
@@ -862,8 +906,10 @@ PRODUCT_PACKAGES += \
     embms \
     uceShimService \
     CNEService \
+    WfdService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     TimeService \
-    aptxui
+    aptxui \
+    WfdCommon
