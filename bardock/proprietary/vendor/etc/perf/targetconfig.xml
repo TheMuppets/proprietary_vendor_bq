@@ -49,6 +49,7 @@
              SocIds="293,304"
              SynCore="1"
              MinCoreOnline="0"
+             CpufreqGov="1"
              GovInstanceType="1" />
 
          <ClustersInfo Id="0" NumCores="4" Type="little" />
