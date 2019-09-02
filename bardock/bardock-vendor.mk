@@ -93,25 +93,20 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/bq/bardock/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/bq/bardock/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
-    vendor/bq/bardock/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
     vendor/bq/bardock/proprietary/lib/libhazebuster.so:system/lib/libhazebuster.so \
-    vendor/bq/bardock/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
     vendor/bq/bardock/proprietary/lib/libjni_filtergenerator.so:system/lib/libjni_filtergenerator.so \
     vendor/bq/bardock/proprietary/lib/libjni_hazebuster.so:system/lib/libjni_hazebuster.so \
     vendor/bq/bardock/proprietary/lib/libjni_makeupV2.so:system/lib/libjni_makeupV2.so \
-    vendor/bq/bardock/proprietary/lib/libjni_optizoom.so:system/lib/libjni_optizoom.so \
     vendor/bq/bardock/proprietary/lib/libjni_seestraight.so:system/lib/libjni_seestraight.so \
     vendor/bq/bardock/proprietary/lib/libjni_sharpshooter.so:system/lib/libjni_sharpshooter.so \
     vendor/bq/bardock/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
     vendor/bq/bardock/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
-    vendor/bq/bardock/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
     vendor/bq/bardock/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/bq/bardock/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/bq/bardock/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/bq/bardock/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/bq/bardock/proprietary/lib/libseemore.so:system/lib/libseemore.so \
     vendor/bq/bardock/proprietary/lib/libseestraight.so:system/lib/libseestraight.so \
-    vendor/bq/bardock/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/bq/bardock/proprietary/lib/libtruescanner.so:system/lib/libtruescanner.so \
     vendor/bq/bardock/proprietary/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
     vendor/bq/bardock/proprietary/lib/libts_face_beautify_hal.so:system/lib/libts_face_beautify_hal.so \
@@ -151,7 +146,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/bq/bardock/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/bq/bardock/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
-    vendor/bq/bardock/proprietary/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
     vendor/bq/bardock/proprietary/lib64/libgf_ca.so:system/lib64/libgf_ca.so \
     vendor/bq/bardock/proprietary/lib64/libgf_hal.so:system/lib64/libgf_hal.so \
     vendor/bq/bardock/proprietary/lib64/libgoodixfingerprintd_binder.so:system/lib64/libgoodixfingerprintd_binder.so \
@@ -159,23 +153,19 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/bq/bardock/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/bq/bardock/proprietary/lib64/libjni_clearsight.so:system/lib64/libjni_clearsight.so \
-    vendor/bq/bardock/proprietary/lib64/libjni_dualcamera.so:system/lib64/libjni_dualcamera.so \
     vendor/bq/bardock/proprietary/lib64/libjni_filtergenerator.so:system/lib64/libjni_filtergenerator.so \
     vendor/bq/bardock/proprietary/lib64/libjni_hazebuster.so:system/lib64/libjni_hazebuster.so \
     vendor/bq/bardock/proprietary/lib64/libjni_makeupV2.so:system/lib64/libjni_makeupV2.so \
-    vendor/bq/bardock/proprietary/lib64/libjni_optizoom.so:system/lib64/libjni_optizoom.so \
     vendor/bq/bardock/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
     vendor/bq/bardock/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
     vendor/bq/bardock/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/bq/bardock/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
-    vendor/bq/bardock/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
     vendor/bq/bardock/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/bq/bardock/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/bq/bardock/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/bq/bardock/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/bq/bardock/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
     vendor/bq/bardock/proprietary/lib64/libseestraight.so:system/lib64/libseestraight.so \
-    vendor/bq/bardock/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/bq/bardock/proprietary/lib64/libtruescanner.so:system/lib64/libtruescanner.so \
     vendor/bq/bardock/proprietary/lib64/libts_detected_face_jni.so:system/lib64/libts_detected_face_jni.so \
     vendor/bq/bardock/proprietary/lib64/libts_face_beautify_hal.so:system/lib64/libts_face_beautify_hal.so \
@@ -502,6 +492,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/bq/bardock/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/bq/bardock/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/bq/bardock/proprietary/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so \
     vendor/bq/bardock/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/bq/bardock/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/bq/bardock/proprietary/vendor/lib/libflash_gpio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_gpio.so \
@@ -777,6 +768,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/lib64/libdrplugin_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrplugin_client.so \
     vendor/bq/bardock/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/bq/bardock/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/bq/bardock/proprietary/vendor/lib64/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcameraddm.so \
     vendor/bq/bardock/proprietary/vendor/lib64/libevent_observer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libevent_observer.so \
     vendor/bq/bardock/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
     vendor/bq/bardock/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
