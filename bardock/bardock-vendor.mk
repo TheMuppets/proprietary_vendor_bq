@@ -117,8 +117,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/fingerprint.default.so \
     vendor/bq/bardock/proprietary/lib64/hw/swfingerprint.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/swfingerprint.default.so \
     vendor/bq/bardock/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
-    vendor/bq/bardock/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
-    vendor/bq/bardock/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/bq/bardock/proprietary/lib64/libclearsight.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libclearsight.so \
     vendor/bq/bardock/proprietary/lib64/libcurl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcurl.so \
     vendor/bq/bardock/proprietary/lib64/libgf_ca.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_ca.so \
@@ -195,6 +193,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
     vendor/bq/bardock/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
     vendor/bq/bardock/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
+    vendor/bq/bardock/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
+    vendor/bq/bardock/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/bq/bardock/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/bq/bardock/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
     vendor/bq/bardock/proprietary/product/lib64/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@1.0.so \
