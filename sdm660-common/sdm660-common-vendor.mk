@@ -1062,4 +1062,5 @@ PRODUCT_PACKAGES += \
     uceShimService \
     ims \
     qcrilmsgtunnel \
-    TimeService
+    TimeService \
+    aptxui
