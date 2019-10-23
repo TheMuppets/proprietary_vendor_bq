@@ -917,5 +917,4 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     TimeService \
-    aptxui \
     WfdCommon
