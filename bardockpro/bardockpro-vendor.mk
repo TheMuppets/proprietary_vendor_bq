@@ -433,6 +433,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libcam.beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.beautyshot.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libcam.vidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.vidhance.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_face_bardock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_face_bardock.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx298_4K_preview.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx298_4K_video.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx298_common.so \
