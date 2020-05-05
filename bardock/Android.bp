@@ -210,20 +210,20 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
+	name: "embms",
 	owner: "bq",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/vendor/app/embms/embms.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	soc_specific: true,
 }
 
 android_app_import {
-	name: "embms",
+	name: "QtiTelephonyService",
 	owner: "bq",
-	apk: "proprietary/product/app/embms/embms.apk",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
