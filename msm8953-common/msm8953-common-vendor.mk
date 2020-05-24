@@ -87,6 +87,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/msm8953-common/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/bq/msm8953-common/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/bq/msm8953-common/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/bq/msm8953-common/proprietary/system/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
+    vendor/bq/msm8953-common/proprietary/system/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
+    vendor/bq/msm8953-common/proprietary/system/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
     vendor/bq/msm8953-common/proprietary/system/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/bq/msm8953-common/proprietary/system/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/bq/msm8953-common/proprietary/system/framework/vendor.qti.data.factory-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.data.factory-V1.0-java.jar \
@@ -392,6 +395,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
@@ -522,6 +526,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/msm8953-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
+    vendor/bq/msm8953-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/bq/msm8953-common/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
@@ -678,6 +683,9 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     WfdService \
+    CACertService \
+    CneApp \
+    IWlanService \
     TimeService \
     QtiTelephonyService \
     embms \

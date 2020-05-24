@@ -194,6 +194,39 @@ android_app_import {
 }
 
 android_app_import {
+	name: "CACertService",
+	owner: "bq",
+	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "CneApp",
+	owner: "bq",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "IWlanService",
+	owner: "bq",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "TimeService",
 	owner: "bq",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
