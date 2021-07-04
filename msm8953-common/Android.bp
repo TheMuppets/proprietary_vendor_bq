@@ -183,17 +183,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "bq",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "CACertService",
 	owner: "bq",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
@@ -281,12 +270,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "bq",
-	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 prebuilt_etc_xml {
